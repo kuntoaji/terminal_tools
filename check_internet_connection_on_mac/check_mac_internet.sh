@@ -6,7 +6,7 @@ do
 
   exit_status=$?
   if [ $exit_status -eq 0 ]; then
-    osascript -e 'display notification "check_internet.sh" with title "Connected to the Internet!" subtitle "Yay!" sound name "Hero"'
+    osascript -e 'display notification "check_internet.sh" with title "Connection Status" subtitle "Connected to the Internet! Yay!" sound name "Hero"'
   fi
 
   sleep 10
