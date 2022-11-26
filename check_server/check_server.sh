@@ -2,8 +2,6 @@
 
 # How to use: ./check_server.sh example.com
 
-# -c <number>: Stop after sending <number> packages
-# -q: quiet output
 domain=$1
 
 echo "Checking ${domain}"
