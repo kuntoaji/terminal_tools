@@ -22,6 +22,7 @@ do
   exit_status=$?
 
   if [ $exit_status -ne 0 ]; then
+    echo "${domain} is down"
     osascript -e 'display notification "check_server.sh" with title "Status" subtitle "Server is down!" sound name "Hero"'
   fi
 

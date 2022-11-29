@@ -10,6 +10,7 @@ do
   exit_status=$?
 
   if [ $exit_status -eq 0 ]; then
+    echo "connected to the internet"
     osascript -e 'display notification "check_mac_internet.sh" with title "Connection Status" subtitle "Connected to the Internet! Yay!" sound name "Hero"'
   fi
 
